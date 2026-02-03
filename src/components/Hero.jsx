@@ -23,7 +23,7 @@ const Hero = () => {
             >
               Hi, my name is
             </motion.h2>
-            
+
             <motion.h1
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4"
               initial={{ opacity: 0, scale: 0.5 }}
@@ -32,7 +32,7 @@ const Hero = () => {
             >
               Abhishek Kumar Yadav
             </motion.h1>
-            
+
             <motion.h2
               className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-transparent mb-6"
               initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ const Hero = () => {
             >
               Software Developer & DSA Enthusiast
             </motion.h2>
-            
+
             <motion.p
               className="text-gray-400 text-lg md:text-xl mb-8"
               initial={{ opacity: 0 }}
@@ -101,10 +101,10 @@ const Hero = () => {
             className="order-1 md:order-2 flex justify-center"
           >
             <motion.div
-              animate={{ 
+              animate={{
                 y: [0, -20, 0],
               }}
-              transition={{ 
+              transition={{
                 duration: 3,
                 repeat: Infinity,
                 ease: "easeInOut"
@@ -113,7 +113,7 @@ const Hero = () => {
             >
               {/* Gradient Background Blob */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-50 animate-pulse"></div>
-              
+
               {/* Image Container */}
               <div className="relative w-72 h-72 md:w-96 md:h-96">
                 {/* Decorative Border */}
@@ -124,31 +124,23 @@ const Hero = () => {
                 >
                   <div className="w-full h-full rounded-full bg-gray-900"></div>
                 </motion.div>
-                
+
                 {/* Profile Image */}
                 <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl">
                   <img
-                    src="/profile.jpg"
+                    src="/profile.JPG"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
-                  {/* Placeholder overlay - Remove this when you add your image */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-secondary/80 flex items-center justify-center backdrop-blur-sm">
-                    <div className="text-center text-white">
-                      <div className="text-6xl mb-2">👤</div>
-                      <p className="text-sm">Add your photo</p>
-                      <p className="text-xs text-gray-200 mt-1">as /public/profile.jpg</p>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Floating Elements */}
                 <motion.div
-                  animate={{ 
+                  animate={{
                     y: [0, -10, 0],
                     rotate: [0, 5, 0]
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 2,
                     repeat: Infinity,
                     ease: "easeInOut"
@@ -159,11 +151,11 @@ const Hero = () => {
                 </motion.div>
 
                 <motion.div
-                  animate={{ 
+                  animate={{
                     y: [0, 10, 0],
                     rotate: [0, -5, 0]
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 2.5,
                     repeat: Infinity,
                     ease: "easeInOut",

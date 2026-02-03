@@ -16,11 +16,13 @@ const Navbar = () => {
 
   const links = [
     { id: 1, link: 'home' },
-    { id: 2, link: 'about' },
-    { id: 3, link: 'skills' },
-    { id: 4, link: 'projects' },
-    { id: 5, link: 'certifications' },
-    { id: 6, link: 'contact' },
+    { id: 2, link: 'experience' },
+    { id: 3, link: 'about' },
+    { id: 4, link: 'skills' },
+    { id: 5, link: 'projects' },
+    { id: 6, link: 'certifications' },
+    { id: 7, link: 'contact' },
+
   ];
 
   return (
@@ -28,9 +30,8 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">

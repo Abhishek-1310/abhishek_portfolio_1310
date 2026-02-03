@@ -24,7 +24,11 @@ const About = () => {
               className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl"
             >
               <div className="w-full h-96 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
-                <span className="text-white text-6xl font-bold">Photo</span>
+                <img
+                  src="/dp.jpg"
+                  alt="dp"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
 
@@ -38,13 +42,13 @@ const About = () => {
               <h3 className="text-3xl font-bold text-white mb-4">
                 Problem Solver & Code Enthusiast
               </h3>
-              
+
               <p className="text-lg leading-relaxed">
                 I'm a passionate software developer with a strong foundation in Data Structures and Algorithms.
                 With expertise in JavaScript, Python, and modern web technologies, I love tackling challenging
                 problems and building efficient, scalable solutions.
               </p>
-              
+
               <p className="text-lg leading-relaxed">
                 My GitHub repository showcases pattern-wise DSA implementations, IoT projects, and various
                 full-stack applications. I believe in writing clean, well-documented code and continuously
