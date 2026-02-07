@@ -63,10 +63,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Abhishek Kumar Yadav. All rights reserved.
+            © 2 Feb 2026 - Abhishek Kumar Yadav. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm flex items-center gap-2">
-            Made with <FaHeart className="text-red-500" /> using React & Tailwind CSS
+            Made with React & Tailwind CSS
           </p>
         </div>
       </div>

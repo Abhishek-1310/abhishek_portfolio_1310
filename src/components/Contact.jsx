@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: FaEnvelope, text: 'abhishekyadav@example.com', href: 'mailto:abhishekyadav@example.com' },
+    { icon: FaEnvelope, text: 'abhishekkumaryadav.uemk.cs.2023@gmail.com', href: 'mailto:abhishekkumaryadav.uemk.cs.2023@gmail.com' },
     { icon: FaPhone, text: 'Available on LinkedIn', href: 'https://www.linkedin.com/in/abhishek-kumar-yadav-b04913202' },
     { icon: FaMapMarkerAlt, text: 'India', href: '#' },
   ];
@@ -42,8 +42,8 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-6">
             Get In <span className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-transparent">Touch</span>
           </h2>
-          
-          <p className="text-gray-400 text-center text-lg mb-16 max-w-2xl mx-auto">
+
+          <p className="text-gray-200 text-center text-lg mb-16 max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? Feel free to reach out!
           </p>
 
@@ -58,14 +58,14 @@ const Contact = () => {
             >
               <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8">
                 <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-                
+
                 <div className="space-y-6">
                   {contactInfo.map((item, index) => (
                     <motion.a
                       key={index}
                       href={item.href}
                       whileHover={{ scale: 1.05, x: 10 }}
-                      className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors duration-200"
+                      className="flex items-center gap-4 text-gray-200 hover:text-white transition-colors duration-200"
                     >
                       <div className="bg-gradient-to-r from-primary to-secondary p-3 rounded-lg">
                         <item.icon className="text-2xl" />
@@ -78,7 +78,7 @@ const Contact = () => {
 
               <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8">
                 <h3 className="text-2xl font-bold text-white mb-4">Let's Work Together</h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-200 leading-relaxed">
                   I'm always open to discussing new projects, creative ideas, or opportunities
                   to be part of your vision. Whether you have a question or just want to say hi,
                   I'll try my best to get back to you!
@@ -105,7 +105,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/10 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary transition-colors duration-200"
+                    className="w-full px-4 py-3 bg-white/10 border border-gray-600 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-primary transition-colors duration-200"
                     placeholder="Your Name"
                   />
                 </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/10 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary transition-colors duration-200"
+                    className="w-full px-4 py-3 bg-white/10 border border-gray-600 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-primary transition-colors duration-200"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -137,7 +137,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows="6"
-                    className="w-full px-4 py-3 bg-white/10 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary transition-colors duration-200 resize-none"
+                    className="w-full px-4 py-3 bg-white/10 border border-gray-600 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-primary transition-colors duration-200 resize-none"
                     placeholder="Your message..."
                   ></textarea>
                 </div>

@@ -64,6 +64,23 @@ const Experience = () => {
         }
     };
 
+    const getExperience = (startDate) => {
+        const start = new Date(startDate);
+        const now = new Date();
+
+        let years = now.getFullYear() - start.getFullYear();
+        let months = now.getMonth() - start.getMonth();
+
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        return { years, months };
+    };
+
+    const { years, months } = getExperience("2023-09-01");
+
     return (
         <section id="experience" className="min-h-screen flex items-center justify-center py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,7 +188,10 @@ const Experience = () => {
                         <div className="inline-block bg-gradient-to-r from-cyan-400/20 to-pink-500/20 backdrop-blur-lg rounded-2xl px-8 py-4 border border-white/10">
                             <p className="text-gray-300 text-lg">
                                 Total Experience at Cognizant:{" "}
-                                <span className="font-bold text-white text-xl">2 years 6 months</span>
+                                <span className="font-bold text-white text-xl">
+                                    {years} {years === 1 ? "year" : "years"}{" "}
+                                    {months} {months === 1 ? "month" : "months"}
+                                </span>
                             </p>
                         </div>
                     </motion.div>

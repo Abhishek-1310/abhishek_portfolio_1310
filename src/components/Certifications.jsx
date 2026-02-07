@@ -25,12 +25,12 @@ const Certifications = () => {
             >
               <FaAward className="text-6xl text-yellow-400" />
             </motion.div>
-            
+
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Certifications & <span className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-transparent">Achievements</span>
             </h2>
-            
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+
+            <p className="text-gray-200 text-lg max-w-2xl mx-auto">
               Continuous learning and professional development through recognized certifications
             </p>
           </div>
@@ -57,7 +57,7 @@ const Certifications = () => {
                   />
                   {/* Glass Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                  
+
                   {/* Icon Badge */}
                   <div className="absolute bottom-4 left-4">
                     <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
@@ -88,7 +88,7 @@ const Certifications = () => {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-300 text-sm mb-4 leading-relaxed line-clamp-3">
+                  <p className="text-gray-200 text-sm mb-4 leading-relaxed line-clamp-3">
                     {cert.description}
                   </p>
 
@@ -97,7 +97,7 @@ const Certifications = () => {
                     {cert.skills.map((skill, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-xs text-gray-300 border border-white/20"
+                        className="px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-xs text-gray-200 font-medium border border-white/20"
                       >
                         {skill}
                       </span>

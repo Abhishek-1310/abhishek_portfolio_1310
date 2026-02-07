@@ -39,17 +39,18 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              Software Developer & DSA Enthusiast
+              Full Stack TypeScript/JavaScript Developer
             </motion.h2>
 
             <motion.p
-              className="text-gray-400 text-lg md:text-xl mb-8"
+              className="text-gray-200 text-lg md:text-xl mb-8 leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              Passionate about solving complex problems through code.
-              Specialized in Data Structures & Algorithms, JavaScript, and building efficient solutions.
+              <span className="font-semibold text-white">2.5+ years at Cognizant</span>, specializing in React, Node.js, Typescript, and AWS.
+              AWS-certified <span className="text-cyan-400">(Cloud Practitioner, Developer Associate, AI Practitioner)</span> innovator solving DSA daily,
+              hackathon winner, and passionate about <span className="text-pink-400">Generative AI</span>.
             </motion.p>
 
             <motion.div
