@@ -31,7 +31,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center py-20">
+    <section id="contact" className="min-h-screen flex items-start md:items-center justify-center py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0 }}
@@ -47,7 +47,7 @@ const Contact = () => {
             Have a project in mind or want to collaborate? Feel free to reach out!
           </p>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {/* Contact Information */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -65,12 +65,15 @@ const Contact = () => {
                       key={index}
                       href={item.href}
                       whileHover={{ scale: 1.05, x: 10 }}
+                      whileTap={{ scale: 0.97 }}
                       className="flex items-center gap-4 text-gray-200 hover:text-white transition-colors duration-200"
                     >
                       <div className="bg-gradient-to-r from-primary to-secondary p-3 rounded-lg">
                         <item.icon className="text-2xl" />
                       </div>
-                      <span className="text-lg">{item.text}</span>
+                      <span className="text-base sm:text-lg break-all sm:break-normal">
+                        {item.text}
+                      </span>
                     </motion.a>
                   ))}
                 </div>
@@ -93,7 +96,7 @@ const Contact = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 space-y-6">
+              <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 sm:p-8 space-y-5 sm:space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-white font-semibold mb-2">
                     Name
